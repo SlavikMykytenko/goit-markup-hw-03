@@ -9,6 +9,7 @@
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
+  background-size:;
 }
 
 li{
@@ -274,19 +275,21 @@ p {
 } */
 .container {
   width: 1200px;
+  display: flex;
   /* outline: 5px solid teal; */
   margin-left: auto;
   margin-right: auto;
-  display: flex;
+  
   /* justify-content: space-between; */
 
   flex-direction: column;
   align-items: baseline;
 }
 .header-container {
+  display: flex;
   flex-direction: row;
-  /* padding-top: 25px;
-  padding-bottom: 25px; */
+  align-items: baseline;
+ 
 }
 
 /* NAVIGATION LINKS */
@@ -363,12 +366,15 @@ padding-bottom: 94px;
 
 .our-team h2 {
   margin-bottom: 50px;
+  margin-top:0;
 }
 
 .stuff {
+  margin:0;
   text-align: center;
   display: flex;
  padding-left: 0px;
+ background-color:;
 }
 
 .stuff li {
@@ -412,6 +418,7 @@ section.about-us ul > li > p {
 
 .what-do-we-do h2 {
   margin-bottom: 50px;
+  margin-top:0;
 }
 
 .button-list-direction{
@@ -419,22 +426,27 @@ display: flex;
 justify-content: center;
 /* margin-top: 94px; */
 margin-bottom: 50px;
+margin-top: 0;
 }
 
-
+.bml{
+  margin-left: 8px;
+}
 
 
 .button-list {
   
   color: var(--primary-text-color);
-  /* font-family: 'Roboto'; */
-  margin-left: 8px;
+ 
+padding:6px 22px;
+
+  /* margin-left: 8px; */
 width: 130px;
 height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
-  /* identical to box height, or 162% */
+ 
 
   text-align: center;
   letter-spacing: 0.03em;
@@ -449,9 +461,9 @@ height: 38px;
 .button-list-1{
 color: var(--primary-text-color);
   /* font-family: 'Roboto'; */
-  
-width: 130px;
-height: 38px;
+  padding:6px 25px;
+/* width: 130px; */
+min-height: 38px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -500,6 +512,11 @@ height: 38px;
   color: var(--white-color);
 }
 
+.button-list-1:hover,
+.button-list-1:focus {
+  color: var(--white-color);
+}
+
 .button-1 {
   background-color: var(--blue-color);
   color: var(--white-color);
@@ -531,12 +548,17 @@ height: 38px;
   flex-wrap: wrap;
   /* justify-content: space-between; */
   padding-left: 0;
+  margin-top: 0;
   
  
 
 }
 
 /* work-list */
+.work-list{
+  margin-bottom: 0;
+}
+
 .work-list-2{
   display: flex;
   flex-wrap: wrap;
@@ -578,6 +600,8 @@ border: 1px solid #EEEEEE;
 
 .work-list-card{
 margin-left:30px;
+border: 1px solid #EEEEEE;
+
 
 }
 
@@ -612,6 +636,13 @@ text-align: left;
 .card {
  
 padding: 20px 24px;
+/* border: 1px solid #EEEEEE;
+border-right: 1px solid #EEEEEE;
+border-bottom:1px solid #EEEEEE; */
+}
+
+.work-list-card li{
+  margin:0;
 }
 
 .card >h2{
