@@ -9,7 +9,7 @@
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background-size:;
+
 }
 
 li{
@@ -374,7 +374,7 @@ padding-bottom: 94px;
   text-align: center;
   display: flex;
  padding-left: 0px;
- background-color:;
+ 
 }
 
 .stuff li {
@@ -435,6 +435,7 @@ margin-top: 0;
 
 
 .button-list {
+      font-family: inherit;
   
   color: var(--primary-text-color);
  
@@ -460,7 +461,7 @@ height: 38px;
 
 .button-list-1{
 color: var(--primary-text-color);
-  /* font-family: 'Roboto'; */
+ font-family: inherit;
   padding:6px 25px;
 /* width: 130px; */
 min-height: 38px;
@@ -688,3 +689,5 @@ address li {
   flex-direction: column;
   justify-content: space-between;
 }
+
+
