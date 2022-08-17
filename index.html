@@ -10,30 +10,35 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
     <title>Студія</title>
   </head>
   <body>
-    <header class="header">
+    <header>
       <div class="container header-container">
-      <div class="logo-main"><a href="index.html"
-        ><span class="logo-blue">Web<span class="logo-black">Studio</span></span></a
-      ></div>
+        <div class="header-left">
+          <div class="logo-logo"><a href="index.html"
+            ><span class="logo-blue">Web<span class="logo-black">Studio</span></span></a
+          ></div>
+          <nav class="nav-links">
+            <ul class="navigation">
+              <li class="navi"><a class="menu active" href="./index.html">Студія</a></li>
+              <li class="navi"><a class="menu" href="./portfolio.html">Портфоліо</a></li>
+              <li class="navi"><a class="menu" href="">Контакти</a></li>
+            </ul>
+          </nav>
+        </div>
 
-      <nav class="nav-links">
-        <ul class="navigation">
-          <li class="navi"><a  class="menu active" href="./index.html">Студія</a></li>
-          <li class="navi"><a  class="menu" href="./portfolio.html">Портфоліо</a></li>
-          <li class="navi"><a class="menu" href="">Контакти</a></li>
-        </ul>
-      </nav>
-
-      <div><ul class="navigation">
-        <li class="navi"><a class="web-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="navi"><a class="cell" href="call:+3809611111">+38 096 111 11 11</a></li>
-      </ul></div>
-    </div>
+        <div class="header-right">
+          <ul class="navigation">
+            <li class="navi">
+              <a class="web-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+            <li class="navi"><a class="cell" href="call:+3809611111">+38 096 111 11 11</a></li>
+          </ul>
+        </div>
+      </div>
     </header>
     
     <main>
@@ -42,7 +47,7 @@
         <button class="button-1" type="button">Замовити послугу</button>
       </section>
       <section class="section about-us-1">
-        <container class="container">
+        <div class="container">
         <!-- <h2>Опис контенту</h2> -->
         <ul class="about-us">          
           <li>
@@ -62,22 +67,22 @@
             <p class="tech-skills">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
           </li>
         </ul>
-      </container>
+      </div>
       </section>
       <section class="what-do-we-do">
         <h2>Чим ми займаємося</h2>
-        <container class="container">
+        <div class="container">
         
         <ul class="about-us">
           <li><img src="images/1.jpg" alt="програмування на компютері" width="370" /></li>
           <li><img src="images/2.jpg" alt="розробка додатку для мобільних пристроїв" width="370" /></li>
           <li><img src="images/3.jpg" alt="робота з кольорами на планшеті" width="370" /></li>
         </ul>
-        </container>
+      </div>
       </section>
       <section class="our-team">
          <h2>Наша команда</h2>
-        <container class="container">
+        <div class="container">
        
         <ul class="stuff">
           <li>
@@ -106,11 +111,11 @@
             <p>UI Designer</p></div>
           </li>
         </ul>
-        </container>
+      </div>
       </section>
     </main>
     <footer class="footer">
-      <container class="container"> 
+      <div class="container"> 
         <div class="container-logo"><a href="index.html"
         ><span class="logo-blue">Web<span class="logo-white">Studio</span></span></a
       ></div>
@@ -125,7 +130,7 @@
           <li><a class="cell-2" href="call:+3809611111">+38 096 111 11 11</a></li>
         </ul>
       </address>
-      </container>
+    </div>
     </footer>
   </body>
 </html>
